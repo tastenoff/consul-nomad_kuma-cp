@@ -7,12 +7,6 @@ job "nginx-web-server" {
       mode = "bridge"
         port "http" {
         }
-      	port "dp_server" {
-        	static = 5678
-      }
-      	port "api_server" {
-        	static = 5681
-      }
       }
     task "nginx" {
       driver = "docker"
@@ -82,10 +76,6 @@ job "nginx-web-server" {
                   tags:
                     kuma.io/service: test-nginx
                     kuma.io/protocol: tcp
-                outbound:
-                - port: 9999
-                  tags:
-                    kuma.io/service: test-nginx2
            EOF
            left_delimiter = "[["
            right_delimiter = "]]"
