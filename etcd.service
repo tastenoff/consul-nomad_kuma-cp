@@ -1,0 +1,15 @@
+[Unit]
+Description=etcd - Highly-available key value store
+Documentation=https://github.com/coreos/etcd
+Conflicts=etcd.service
+Conflicts=etcd2.service
+
+[Service]
+ExecStart=/home/core/etcd/etcd -config-file /home/core/mount/etcd.yaml
+Restart=always
+RestartSec=5s
+LimitNOFILE=40000
+TimeoutStartSec=0
+
+[Install]
+WantedBy=multi-user.target
