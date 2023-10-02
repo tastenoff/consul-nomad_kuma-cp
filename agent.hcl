@@ -1,12 +1,12 @@
 addresses = {
-http = "127.0.0.1 192.168.1.200"
+http = "127.0.0.1 192.168.64.5"
 }
 
 advertise = {
-  http = "192.168.1.200"
+  http = "192.168.64.5"
 }
 
-bind_addr = "192.168.1.200"
+bind_addr = "192.168.64.5"
 
 client {
   enabled = true
