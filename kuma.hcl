@@ -17,7 +17,7 @@ job "kuma" {
       driver = "docker"
 
       config {
-        image = "kumahq/kuma-cp:2.4.1"
+        image = "kumahq/kuma-cp:2.4.3"
         entrypoint = [ "sh" ]
         args  = [ "$${NOMAD_TASK_DIR}/entrypoint.sh" ]
         ports = [ "dp_server", "api_server" ]
