@@ -1,7 +1,7 @@
 bind_addr = "192.168.64.6"
 datacenter = "dc1"
-node_name = "node_2"
-data_dir = "/tmp/consul2"
+node_name = "Node2"
+data_dir = "/tmp/consul"
 server = true
 bootstrap_expect = 3
 rejoin_after_leave = true
