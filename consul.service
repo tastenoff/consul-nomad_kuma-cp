@@ -3,7 +3,7 @@ Description="HashiCorp Consul - A service mesh solution"
 Documentation=https://www.consul.io/
 Requires=network-online.target
 After=network-online.target
-ConditionFileNotEmpty=/etc/consul/consul-agent.hcl
+ConditionFileNotEmpty=/etc/consul/agent.hcl
 
 [Service]
 ExecStart=/home/core/consul agent -config-dir=/etc/consul/
